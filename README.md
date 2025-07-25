@@ -1,112 +1,163 @@
-# 🎓 Student Performance Power BI Project
-
-Welcome to the Student Performance Dashboard – a Power BI-driven analysis of student data designed to uncover trends in academic outcomes, payment behaviour, subject demand, and enrolment across time and geography.
-
-This project dives deep into how students perform, how they engage with institutions, and how patterns emerge in the data when seen from the right angles. Built in both basic and intermediate levels, the dashboards offer flexible tools for educators, administrators, and analysts to make informed decisions.
+# 🔍 Power BI Pokédex Dashboard  
+*A beginner-friendly data storytelling project built in Power BI using the world of Pokémon.*
 
 ---
 
-## 📌 Project Overview  
-This project started with a core question: *What can student performance data tell us beyond grades?*
+## 🎯 Project Overview
 
-By combining enrolment records, payment methods, grades, and academic outcomes, this dashboard delivers visual insights into academic distribution, subject trends, payment patterns, and more. The project is divided into two levels to showcase both foundational and advanced Power BI skills.
+What happens when you're handed a dataset from a world you've never explored? You learn fast.
 
----
-
-## 🎯 Project Goals  
-This analysis focuses on:  
-- Tracking student enrolment and academic trends across time and regions  
-- Visualising subject popularity by country  
-- Highlighting grade distributions and pass/fail outcomes  
-- Analysing payment method preferences and patterns  
-- Comparing basic and intermediate dashboarding techniques in Power BI  
+This project began as a way to improve my Power BI skills by working with a structured but unfamiliar dataset — the Pokédex. As someone new to Pokémon, this was a rewarding opportunity to practice asking the right questions, interpreting unknown data, and designing a dashboard that communicates clearly to others who are just starting out.
 
 ---
 
-## 🌐 Data Overview  
-The dataset includes anonymised student-level data such as:  
-- Enrolment Date  
-- Country  
-- Subject Stream (Arts, Commerce, Engineering, Science)  
-- Grade Category (A, B, C, D)  
-- Pass/Fail Status  
-- Payment Method (Credit Card, Cash, Bank Transfer, Online)  
-- Book Return Month  
+## 👥 Who This Is For
+
+- 🧑‍🎓 **Beginners learning Power BI or data visualisation**  
+- 🧪 **Students or analysts working with new datasets**  
+- 🎮 **Pokémon fans exploring patterns behind their favourite characters**  
+- 💼 **Consultants handling unfamiliar client data sets or business domains**
 
 ---
 
-## 🧹 Data Cleaning & Preparation  
-All data was prepared using Power BI’s built-in tools:  
-- Nulls removed or filled with default values  
-- Date formats standardised  
-- Subject and payment types normalised for consistent analysis  
-- Measures and calculated columns created using DAX for comparisons and KPIs  
+## ❓ Key Questions Explored
+
+- How can users **search and select Pokémon visually** to learn about them interactively?
+- What patterns emerge across **core stats**: HP, Attack, Defence, Special Attack, Special Defence, Speed?
+- How do Pokémon differ in **Height, Weight, Total Base Points**, and **Generation**?
+- What insights can we gain from **Pokédex Number**, **Typing**, and **descriptive attributes**?
+- How can a dashboard guide beginners to **explore data effectively**, even without prior domain knowledge?
 
 ---
 
-## 📊 Dashboard Levels  
+## 📁 Dataset Overview
 
-### 🔹 1. Basic Level Dashboard  
+| Column               | Description                                  |
+|----------------------|----------------------------------------------|
+| `Pokedex Number`     | National Pokédex ID                          |
+| `PokemonName`        | Pokémon's name                               |
+| `Height (m)`         | Height in metres                             |
+| `Weight (kg)`        | Weight in kilograms                          |
+| `Number of Abilities`| Count of known abilities                     |
+| `Total Base Stats`   | Sum of all individual stats                  |
+| `HP` to `Speed`      | Base stat breakdown                          |
+| `Catch Rate`         | Likelihood of capture                        |
+| `Base Friendship`    | Default friendship value                     |
+| `Base Experience`    | EXP awarded when defeated                    |
+| `Pokémon Image`      | Scraped image for display                    |
 
-This dashboard focuses on clean, simple visualisations designed for high-level summaries.  
-
-**Key Features:**  
-- **Student Count by Grade** – Pie chart breakdown of students receiving A, B, C, or D  
-- **Enrolment Over Time** – Line chart tracking student enrolment trends from 2015 to 2024  
-- **Payment Method Usage** – Bar chart comparing payment preferences  
-- **Subject vs. Country Matrix** – Highlights popular subject streams across different countries  
-- **Daily Enrolment Summary** – Table of daily enrolments for operations planning  
-
----
-
-### 🔹 2. Intermediate Level Dashboard  
-
-An expanded version with deeper analysis and more interactivity. Ideal for detailed decision-making.  
-
-**Key Features:**  
-- **Total Students & Courses** – Overall figures (e.g., 6,200 students, 50 courses)  
-- **Pass vs. Fail Rate** – Visual pie chart showing academic outcomes (e.g., 90% pass)  
-- **Book Returns by Month** – Tree-map showing monthly book return volumes  
-- **Payment Trends by Year** – Stacked bar chart showing shifts in payment behaviour  
-- **Enrolment Timeline** – Line graph tracking enrolment growth year over year  
-- **Subject Enrolment by Country** – Matrix revealing demand for each subject in specific countries  
+📦 *Note: Images were obtained via web scraping for non-commercial, educational purposes only.*
 
 ---
 
-## 📌 Insights & Trends  
+## 🧹 Data Cleaning & Processing
 
-| Insight Category       | Key Takeaways                                                                 |
-|------------------------|-------------------------------------------------------------------------------|
-| 📈 Academic Performance | Most students achieved A or B grades, with a low fail rate overall             |
-| 🌍 Global Demand        | Engineering and Commerce were most popular in countries like India and Nepal  |
-| 💳 Payment Preferences  | Credit Card and Online payments led across all years, showing digital adoption |
-| 📚 Book Return Patterns | March and August showed peak return activity, suggesting term-end trends       |
-| 🗓️ Enrolment Patterns   | Admissions peaked in late-year months, with noticeable dips in January         |
+- Removed duplicate entries
+- Standardised column formats and names
+- Handled null values in stat columns
+- Scaled numerical fields for consistency
+- Linked images using Pokémon names for dynamic visualisation
 
 ---
 
-## 🛠 Tools & Techniques Used  
-- **Power BI Desktop** – Dashboard creation and publishing  
-- **DAX** – Measures like total students, % passed, payment totals, return rates  
-- **Power Query Editor** – Data shaping and cleaning  
-- **Excel & SQL** – Preprocessing support before dashboarding  
+## 🧩 Interactive Dashboard Features
+
+This dashboard is designed to be **playful, intuitive, and beginner-friendly**, with a retro-inspired Pokédex UI:
+
+### 🎮 Visual Slicers & Filters
+- **Image-based slicer** to select Pokémon by icon  
+- Additional filters for:
+  - Generation (e.g., Gen 1–9)
+  - Type (Water, Rock, Fire, etc.)
+  - Base Stat Range (via slider)
+  - Speed/Attack filters
+
+### 🖼️ Pokémon Profile Display
+- Dynamic image updates based on slicer selection
+- Helps new users connect names with visuals
+
+### 📈 Radar Chart: Stat Comparison
+- Spider chart showing:
+  - HP
+  - Attack
+  - Defence
+  - Special Attack
+  - Special Defence
+  - Speed  
+- Enables side-by-side Pokémon stat comparisons
+
+### 📦 Attribute Summary Cards
+- Pokédex Number  
+- Generation  
+- Height & Weight  
+- Total Base Stats  
+- Typing (e.g., Water/Rock)
+
+### 📘 Text Description Panel
+- Example: *“Corsola is a Water/Rock Pokémon introduced in Generation 2. It is known as the Coral Pokémon.”*  
+- Adds narrative and learning context for each Pokémon
 
 ---
 
-## 📘 How to Use  
+## 🖼️ Example: Corsola (No. 222)
+
+- **Generation**: 2  
+- **Type**: Water / Rock  
+- **Height**: 0.60 m  
+- **Weight**: 5.00 kg  
+- **Base Stat Total**: 410  
+- Displayed with image, radar chart, and full stat breakdown
+
+---
+
+## 📊 Dashboard Highlights
+
+- **Stat Comparison View**  
+- **Top Stat Leaderboard by Type or Attribute**  
+- **Visual Filtering for Exploration**  
+- **Card-based Pokémon Profiles**
+
+📌 *[Optional: Add screenshots or a link to Power BI Service if published]*
+
+---
+
+## 🛠 Tools & Skills Used
+
+| Tool / Method         | Purpose                                     |
+|-----------------------|---------------------------------------------|
+| Power BI              | Dashboard creation, DAX, interactivity      |
+| Excel                 | Data cleaning and shaping                   |
+| Web Scraping          | Image collection for Pokémon visuals        |
+| Design Thinking       | User experience and accessibility           |
+| Data Storytelling     | Turning raw data into insight and clarity   |
+
+---
+
+## 💡 Key Takeaways
+
+- You don’t need subject expertise — just **curiosity** and a willingness to explore.
+- Understanding your **audience** is more important than knowing every datapoint.
+- Power BI is a powerful tool for bringing new datasets to life — even when you're a beginner.
+
+---
+
+## 📘 How to Use This Project
+
 1. Clone or download this repository  
 2. Open the `.pbix` file in Power BI Desktop  
-3. Explore both dashboards using slicers and filters  
-4. Use tooltips and matrix views for detailed insights  
+3. Explore filters, select different Pokémon, and uncover insights  
+4. Add your own datasets or create new visuals to extend the project!
 
 ---
 
-## 🤝 Contributions  
-Have suggestions or want to collaborate?  
-Feel free to fork this repo, open a pull request, or leave feedback. Let’s build more insightful tools together! 🚀  
+## 🤝 Contributions & Feedback
+
+Have an idea? Want to expand the dashboard?  
+Fork the repo, open a pull request, or raise an issue.
 
 ---
 
-🔹 Stay tuned — more Power BI dashboards, industry datasets, and advanced data projects coming soon!
+**Made with data and curiosity by Anansha Kc**  
+*Learning Power BI — one Pokémon at a time.*
 
-Made with 💙 by **Anansha Kc**
+🌐 [LinkedIn](https://linkedin.com/in/anansha-kc) | 💼 Project Advisory Group | ⚙️ Data6 Studio
