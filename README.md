@@ -164,4 +164,4 @@ Fork the repo, open a pull request, or raise an issue.
 **Made with data and curiosity by Anansha Kc**  
 *Learning Power BI — one Pokémon at a time.*
 
-🌐 [LinkedIn](https://linkedin.com/in/anansha-kc) | 💼 Project Advisory Group | ⚙️ Data6 Studio
+🌐 [LinkedIn](https://linkedin.com/in/anansha-kc) 
