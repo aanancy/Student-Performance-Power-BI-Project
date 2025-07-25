@@ -62,6 +62,9 @@ This project began as a way to improve my Power BI skills by working with a stru
 
 ## 🧩 Interactive Dashboard Features
 
+https://github.com/user-attachments/assets/677afcdd-4ac8-49f0-9849-b6850d325280
+
+
 This dashboard is designed to be **playful, intuitive, and beginner-friendly**, with a retro-inspired Pokédex UI:
 
 ### 🎮 Visual Slicers & Filters
