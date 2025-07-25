@@ -100,6 +100,7 @@ This dashboard is designed to be **playful, intuitive, and beginner-friendly**, 
 ---
 
 ## 🖼️ Example: Corsola (No. 222)
+![Uploading image.png…]()
 
 - **Generation**: 2  
 - **Type**: Water / Rock  
